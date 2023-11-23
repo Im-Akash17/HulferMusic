@@ -8,7 +8,7 @@
      "node": "18.x"
   },
   "scripts": {
-    "build" : "nodemon server.js",
+    "build" : "nodemon app.js",
     "dev" : "npm install"
   },
   "author": "",
