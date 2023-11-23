@@ -8,8 +8,10 @@
      "node": "18.x"
   },
   "scripts": {
-    "build" : "nodemon app.js",
-    "dev" : "npm install"
+    "client-install" : "npm install--prefix client",
+    "server" : "nodemon server.js",
+    "dev" : "concurrently \"npm run server\"\"npm run client\"",
+    "start" : "node server.js"
   },
   "author": "",
   "license": "ISC",
